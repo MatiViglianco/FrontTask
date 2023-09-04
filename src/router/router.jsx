@@ -9,10 +9,10 @@ const Router = () => {
     <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<Navigate to="tasks" />} />
-        <Route exact path="/tasks" element={<TasksPage />} />
-        <Route exact path="/task-create" element={<TaskFormPage />} />
-        <Route exact path="/tasks/:id" element={<TaskFormPage />} />
+        <Route exact path="/" element={<Navigate to="FrontTask" />} />
+        <Route exact path="/FrontTask" element={<TasksPage />} />
+        <Route exact path="/FrontTask-create" element={<TaskFormPage />} />
+        <Route exact path="/FrontTask/:id" element={<TaskFormPage />} />
         <Route exact path="*" element={<h1>Not Found</h1>} />
       </Routes>
       <Toaster />
