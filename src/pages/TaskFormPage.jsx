@@ -34,7 +34,7 @@ function TaskFormPage() {
         },
       });
     }
-    navigate("/tasks");
+    navigate("/FrontTask");
   });
 
   useEffect(() => {
@@ -84,7 +84,7 @@ function TaskFormPage() {
                     color: "#fff",
                   },
                 });
-                navigate("/tasks");
+                navigate("/FrontTask");
               }
             }}
           >

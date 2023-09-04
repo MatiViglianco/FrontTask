@@ -8,7 +8,7 @@ function TaskCard({ task }) {
       className="bg-zinc-800 p-3 hover:bg-zinc-700 hover:cursor-pointer"
       style={{ backgroud: "black" }}
       onClick={() => {
-        navigate(`/tasks/${task.id}`);
+        navigate(`/FrontTask/${task.id}`);
       }}
     >
       <h1 className="font-bold uppercase">{task.title}</h1>
