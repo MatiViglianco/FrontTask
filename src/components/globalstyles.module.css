@@ -1,0 +1,60 @@
+/* Task List */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+
+.container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navigation {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  background-color: rgba(61, 61, 61, 0.479);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  gap: 2rem;
+}
+
+.containerForm {
+  margin-top: -7rem;
+  background-color: rgba(61, 61, 61, 0.479);
+  width: 60vw;
+  height: 60vh;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.save {
+  background-color: #59981a;
+  width: 20vw;
+  height: 7vh;
+  border-radius: 0.5rem;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}

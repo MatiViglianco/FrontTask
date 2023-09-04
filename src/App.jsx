@@ -1,11 +1,7 @@
 import Router from "./router/router";
 
 function App() {
-  return (
-    <div className="conteiner mx-auto">
-      <Router />
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getApi } from "../api/getApi";
 import TaskCard from "./TaskCard";
-
+import styles from "./globalstyles.module.css";
 function TaskList() {
   const [tasks, seTasks] = useState([]);
 
@@ -13,7 +13,7 @@ function TaskList() {
     loadTasks();
   }, []);
   return (
-    <div className="grid grid-cols-3 gap-3">
+    <div className={styles.container}>
       {tasks.map((task) => (
         <TaskCard key={task.id} task={task} />
       ))}

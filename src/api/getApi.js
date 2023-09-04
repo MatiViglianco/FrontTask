@@ -23,7 +23,7 @@ export const PostApi = (task) => {
 };
 
 export const deleteApi = (id) => {
-  taskApi.delete(`/${id}`);
+  return taskApi.delete(`/${id}`);
 };
 
 export const updateApi = (id, task) => {

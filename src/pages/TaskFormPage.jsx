@@ -3,6 +3,7 @@ import { PostApi, deleteApi, updateApi, getOneApi } from "../api/getApi";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { toast } from "react-hot-toast";
+import styles from "../components/globalstyles.module.css";
 
 function TaskFormPage() {
   const {
@@ -34,7 +35,7 @@ function TaskFormPage() {
         },
       });
     }
-    navigate("/FrontTask");
+    navigate("/FrontTask/");
   });
 
   useEffect(() => {
@@ -49,8 +50,8 @@ function TaskFormPage() {
   }, []);
 
   return (
-    <div className="max-w-xl mx-auto">
-      <form onSubmit={onSubmit}>
+    <div className={styles.containerForm}>
+      <form className={styles.form} onSubmit={onSubmit}>
         <input
           type="text"
           placeholder="Title"
@@ -65,9 +66,7 @@ function TaskFormPage() {
           className="bg-zinc-700 p-3 rounded-lg block w-full mb-3"
         ></textarea>
         {errors.description && <span>Description is required</span>}
-        <button className="bg-indigo-500 p-3 rounded-lg block w-full mt-3">
-          Save
-        </button>
+        <button className={styles.save}>SAVE</button>
       </form>
       {params.id && (
         <div className=" flex justify-end">
@@ -84,11 +83,11 @@ function TaskFormPage() {
                     color: "#fff",
                   },
                 });
-                navigate("/FrontTask");
+                navigate("/FrontTask/");
               }
             }}
           >
-            Delete
+            DELETE
           </button>
         </div>
       )}
