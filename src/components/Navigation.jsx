@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <div className={styles.navigation}>
       <Link to="/FrontTask/">
-        <h1 className="font-bold text-3xl ml-4">TASK APP</h1>
+        <h1 className="font-bold text-4xl ml-4 ">TASK APP</h1>
       </Link>
       <Link to="/FrontTask-create/">
         <button
@@ -13,7 +13,7 @@ function Navigation() {
             background: "#59981a",
             color: "#fff",
           }}
-          className="bg-indigo-500 px-3 py-2 rounded-lg  mr-4"
+          className="bg-indigo-500 px-10 py-2 rounded-lg  mr-4 text-xl"
         >
           CREATE TASK
         </button>

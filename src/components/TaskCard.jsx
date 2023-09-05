@@ -11,8 +11,8 @@ function TaskCard({ task }) {
         navigate(`/FrontTask/${task.id}`);
       }}
     >
-      <h1 className="font-bold uppercase">{task.title}</h1>
-      <p className="text-slate-400">{task.description}</p>
+      <h1 className="text-xl font-bold uppercase">{task.title}</h1>
+      <p className="text-xl text-slate-400">{task.description}</p>
     </div>
   );
 }

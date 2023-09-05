@@ -56,22 +56,30 @@ function TaskFormPage() {
           type="text"
           placeholder="Title"
           {...register("title", { required: true })}
-          className="bg-zinc-700 p-3 rounded-lg block w-full mb-3"
+          className="bg-zinc-700 p-3 rounded-lg block w-full mb-3 text-2xl "
         />
-        {errors.title && <span>Title is required</span>}
+        {errors.title && (
+          <span className="text-xl uppercase" style={{ color: "#D0342C " }}>
+            Title is required
+          </span>
+        )}
         <textarea
           rows="3"
           placeholder="Description"
           {...register("description", { required: true })}
-          className="bg-zinc-700 p-3 rounded-lg block w-full mb-3"
+          className="bg-zinc-700 p-3 rounded-lg block w-full mb-3 text-2xl"
         ></textarea>
-        {errors.description && <span>Description is required</span>}
+        {errors.description && (
+          <span className="text-xl uppercase" style={{ color: "#D0342C " }}>
+            Description is required
+          </span>
+        )}
         <button className={styles.save}>SAVE</button>
       </form>
       {params.id && (
         <div className=" flex justify-end">
           <button
-            className="bg-red-500 p-3 rounded-lg w-48 mt-3"
+            className="bg-red-500 p-3 rounded-lg w-48 mt-3 text-l"
             onClick={async () => {
               const accepted = window.confirm("are you sure?");
               if (accepted) {
